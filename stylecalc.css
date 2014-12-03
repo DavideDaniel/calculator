@@ -1,0 +1,157 @@
+
+html {
+    background: -moz-radial-gradient(center, ellipse cover,  #22C6E4 1%, #2F0928 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#22C6E4), color-stop(100%,#2F0928)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #22C6E4 1%,#2F0928 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #22C6E4 1%,#2F0928 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #22C6E4 1%,#2F0928 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #22C6E4 1%,#2F0928 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4c5fc', endColorstr='#4f8ff9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    min-height: 100%;
+}
+    @media screen and (max-width: 1024px) {}
+
+
+header {
+    font: 50px Arial, sans-serif;
+    font-family: monospace;
+    color: rgba(0, 0, 0, 0.55);
+    
+    background-color: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 25px 20px 25px 20px;
+    width: 400px;
+    -moz-box-shadow: 0 0 10px #041d17;
+    box-shadow: 0 0 20px #041d17;
+}
+
+.depth {
+    display: block;
+    position: relative;
+}
+.button {
+    position:relative;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-top:15px;
+    margin-bottom:30px;
+    margin-left: 25%;
+    text-shadow: 5px 3px 13px rgba(75, 75, 75, 0.75);
+    -webkit-box-shadow: 1px 5px 22px #000;
+    -moz-box-shadow: 1px 5px 22px #000;
+    box-shadow: 1px 5px 22px #000;
+    font-family: Helvetica, Arial;
+    color: #ffffff;
+
+    font-size: 40px;
+    font-weight: bolder;
+    background: rgba(0,0,0,0.25);
+    padding: 25px 25px 25px 25px;
+    
+    outline-style:none;
+    
+transition:All 0.05s ease-in;
+-webkit-transition:All 0.05s ease-in;
+-moz-transition:All 0.05s ease-in;
+-o-transition:All 0.05s ease-in;
+transform: scale(1) skew(0deg) ;
+-webkit-transform: scale(1) skew(0deg) ;
+-moz-transform: scale(1) skew(0deg) ;
+-o-transform: scale(1) skew(0deg) ;
+-ms-transform: scale(1) skew(0deg) ;
+}
+
+.button:hover {
+    background: rgba(0,0,0,0.55);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.55), rgba(56, 238, 255, 0.25));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.55), rgba(56, 238, 255, 0.25));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.55), rgba(56, 238, 255, 0.25));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.55), rgba(56, 238, 255, 0.25));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 168, 184, 0.37));
+    text-decoration: none;
+transform: scale(0.95) skew(1deg);
+-webkit-transform: scale(0.95) skew(1deg) ;
+-moz-transform: scale(0.95) skew(1deg) ;
+-o-transform: scale(0.95) skew(1deg) ;
+-ms-transform: scale(0.95) skew(1deg) ;
+}
+
+#calcBoxes {
+    /*background-color: rgba(0, 0, 0, 0.65);*/
+    display: block;
+    width: 700px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    width: 400px;
+    -moz-box-shadow: 0 0 10px #041d17;
+    box-shadow: 0 0 20px #041d17;
+}
+
+
+.input {
+    font-style: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.25);
+    float: right;
+    display: inline-block;
+    width: 235px;
+    height: 75px;
+    margin-top: 20px;
+    margin-left:10%;
+    padding: 20px;
+    font-family: monospace;
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 5em;
+    font-weight: lighter;
+    
+    border: 1px solid rgba(16, 103, 133, 0.6);
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.5), inset 0 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    outline: 0;
+    
+}
+
+
+
+
+footer {
+    position: fixed;
+    font: 20px Arial, sans-serif;
+    font-family: monospace;
+    color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin: 0 auto;
+    width: 220px;
+    height: 30px;
+    
+    
+    
+    -moz-box-shadow: 0 0 10px #041d17;
+    box-shadow: 0 0 20px #041d17;
+    position: relative; 
+}
+
+
+
+@media (max-width: 600px) {
+  
+   }
+   #header {
+       position: relative;
+       margin: 0 auto;
+  }
+  #button {
+      margin: 0 auto;
+ }
+ #input {
+  margin: 0 auto;
+ }
+
+}

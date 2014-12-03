@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Not a real calculator at all... 2 text boxes?! No = button?!!!</title>
+        <link rel="stylesheet" href="./stylecalc.css">
+    </head>
+    <body>
+    <header class="depth">a calculator without equal</header>
+    <div id="calcBoxes">
+        <input type="text" class="input" id="num1">
+        <input type="text" class="input" id="num2">
+        <input type="text" class="input" id="answer" readonly="true"/>
+    </div>
+    <div id="calcButtons">
+        <button class= "button"id="add">+</button>
+        <button class= "button"id="sub">- </button>
+        <button class= "button"id="mul"> * </button>
+        <button class= "button"id="divi"> / </button>
+    </div>
+    <script type="text/javascript">
+        var text1 = document.querySelector("input#num1");
+        var text2 = document.querySelector("input#num2");
+        var add = document.querySelector("#add");
+        var sub = document.querySelector("#sub");
+        var mul = document.querySelector("#mul");
+        var divi = document.querySelector("#divi");
+        var clicked = "click";
+        x = parseFloat(text1.value);
+        y = parseFloat(text2.value);
+        
+        calculate = function() {
+        var x = parseFloat(text1.value);
+        var y = parseFloat(text2.value);
+        callback
+        	
+        }
+
+        addNum = function() {
+        var x = parseFloat(text1.value);
+        var y = parseFloat(text2.value);
+        ans = x+y;
+        
+        var answer = document.querySelector("input#answer");
+        answer.value=ans;
+        }
+        add.addEventListener(clicked, addNum);
+        subNum = function(x,y) {
+        var x = parseFloat(text1.value);
+        var y = parseFloat(text2.value);
+        ans = x-y;
+        var answer = document.querySelector("input#answer");
+        answer.value=ans;
+        }
+        sub.addEventListener(clicked, subNum);
+        divNum = function(x,y) {
+        var x = parseFloat(text1.value);
+        var y = parseFloat(text2.value);
+        if (y===0) { alert("Undefined! Try again. L2Math.")
+        } else {
+        ans = x/y
+        var answer = document.querySelector("input#answer");
+        answer.value=ans;
+        }
+        }
+        divi.addEventListener(clicked, divNum);
+        mulNum = function(x,y) {
+        var x = parseFloat(text1.value);
+        var y = parseFloat(text2.value);
+        ans = x*y
+        var answer = document.querySelector("input#answer");
+        answer.value=ans;
+        }
+        mul.addEventListener(clicked, mulNum);
+    </script>
+
+</body>
+<footer><div class= "footer">david e daniel</div></footer>
+</html>
